@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-image: linear-gradient(darkblue ,rgb(0, 0, 255,0.637) ,white );
+        background-repeat: no-repeat;
+        height: 600px;
+        
+    }
+    .b1{
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+     border: 1px solid white;
+     animation-name: bu1;
+     animation-duration: 5s;
+     position: relative;
+     animation-iteration-count: infinite;
+    }
+    .b2{
+        height: 5px;
+        width: 5px;
+        border-radius: 5px;
+        background-color: white;
+        position: fixed;
+        left: 5px;
+        top: 5px;
+    }
+    @keyframes bu1 {
+        0%{
+            transform: scale(0.1,0.1);
+        }
+        20%{
+            transform: scale(0.2,0.2);
+        }
+        40%{
+            transform: scale(0.4,0.4);
+        }
+        60%{
+            transform: scale(0.6,0.6);
+        }
+        80%{
+            transform: scale(0.7,0.7);
+        }
+        100%{
+            transform: scale(0.8,0.8);
+        }
+        
+    }
+</style>
+</head>
+<body>
+    <div class="b1"><div class="b2"></div></div>
+    
+</body>
+</html>

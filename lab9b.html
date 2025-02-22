@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 70px;
+            width: 100px;
+            background-color: greenyellow;
+            
+            border-radius: 10px;
+            animation-duration: 5s;
+            text-align: center;
+            font-size: 30px;
+            animation-iteration-count: infinite;
+            animation-name: box1;
+            position: relative;
+            margin-top:200px ;
+            padding-top: 30px;
+            color: white;
+        }
+        @keyframes box1 {
+            0%{
+                left: 0px;
+                transform: rotate(35deg);
+                background-color: red;
+        }
+        50%{
+            left: 800px;
+            transform: rotate(0deg);
+            background-color: aqua;
+        }
+        
+        100%{
+        
+            left: 0px;
+            transform: rotate(-360deg);
+            background-color: black;
+        }}
+    </style>
+</head>
+<body>
+
+ <div class="box">css</div>
+</body>
+</html>
