@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all in one css </title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        h1{
+            color: aqua;
+            text-align: center;
+        }
+        #p2{
+            color: blue;
+        }
+        .p1{
+            background-color: brown;
+            color: white;
+        }
+        .class1,.class2{
+            background-color: cadetblue;
+        }
+        .div1{
+            height: 500px;
+            width: 100%;
+            background-image: url(aboutcafe.jpg);
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: top center;
+            /* background-position: 10px 20px; */
+            /* background-position: 30% 30%; */
+            
+
+        }
+        #div2{
+            color: green;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight:bolder ;
+            /* font-weight: 400; */
+            font-variant: inherit;
+        }
+        #div3{
+            text-decoration: underline;
+            /* text-indent: 20px; */
+            text-indent: 50%;
+            text-align: left;
+            text-transform: capitalize;
+            white-space: inherit;
+            word-spacing: 20px;
+            /* word-break: break-all; */
+            letter-spacing: 3px;
+            line-height: 10px;
+
+        }
+        #float1{
+            float: left;
+            background-color: blue;
+            width: 40%;
+        }
+        #float2{
+            float: right;
+            background-color: aqua;
+            width: 40%;
+        }
+        #padding{
+            background-color: aqua;
+            padding-left: 10px;
+            padding: 20px;
+            padding-right: 30px;
+        }
+        #border{
+            border: 1px solid red;
+            border-radius: 5px;
+            border-width: 7px;
+            border-top: 1px solid green;
+            /* border-style: dashed; */
+        }
+        #margin{
+            background-color: blueviolet;
+            margin: 20px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        ul{
+            list-style-type: circle;
+            /* list-style-type: decimal; */
+            /* list-style-type: none; */
+            /* list-style-image: url(applelogo.jpg); */
+            list-style-position: outside;
+            /* list-style-type: upper-roman; */
+        }
+        #position{
+            position: relative;
+            position: sticky;
+            position: -webkit-sticky;
+            /* position: fixed; */
+            /* position: absolute; */
+            /* top: 50px;
+            left: 10px; */
+        }
+        #layers1{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            left: 100px;
+            top: 1300px;
+            background-color: red;
+            z-index: 5;
+        }
+        #layers2{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            left: 50px;
+            top: 1250px;
+            background-color: blue;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>there are three types of css internal,inline,external </h1><br>
+    <p class="p1">hello friends</p>
+    <p id="p2">this is manan Trivedi</p>
+    <p class="class1 class2">how are you?</p>
+    <hr>
+    <div class="div1"></div>
+    <hr>
+    <div id="div2">hi this is font property</div>
+    <hr>
+    <div id="div3">this is text property</div>
+    <hr>
+    <div id="float1">float property1</div>
+    <div id="float2">float property2</div>
+    <br><br>
+    <hr>
+    <div id="padding">this is padding property</div>
+    <hr>
+    <div id="border">this is border property</div>
+    <hr>
+    <div id="margin">this is margin property</div>
+    <hr>
+    <ul>
+        <li>hi</li>
+        <li>this is </li>
+        <li>manan</li>
+        <li>Trivedi</li>
+    </ul>
+    <hr>
+    <div id="position">this is position property</div>
+    <hr>
+    <div id="layers1"></div>
+    <div id="layers2"></div>
+</body>
+</html>
