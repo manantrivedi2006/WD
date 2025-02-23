@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all css3 in one page</title>
+    <style>
+        #p{
+            animation-name: hello;
+            animation-duration:5s;
+        }
+        @keyframes hello {
+            from{
+                margin-left: 100%;
+                width: 300px;
+            }
+            to{
+                margin-left: 0%;
+                width: 100px;
+            }
+        }
+        #color{
+            height: 100px;
+            width: 100px;
+            animation-name: color;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes color{
+            25%{
+                background-color: red;
+                margin-left: 100px;
+            }
+            50%{
+                background-color: aqua;
+                margin-left: 200px;
+            }
+            75%{
+                background-color: blueviolet;
+                margin-left: 100px;
+            }
+            100%{
+                background-color: chartreuse;
+                margin-left: 0px;
+            }
+        }
+        :root{
+            --myFavcolor:orange;
+            --myFavcolor2:red;
+        }
+        #p1{
+            background-color: var(--myFavcolor);
+            color: var(--myFavcolor2);
+        }
+        #div1{
+            background-color: var(--myFavcolor2);
+            color: var(--myFavcolor);
+        }
+        #media1{
+            background-color: red;
+            width: 50%;
+            float: left;
+        }
+        #media2{
+            background-color: yellow;
+            width: 50%;
+            float: left;
+        }
+        @media (max-width:600px){
+            #media1{
+                width: 100%;
+            }
+            #media2{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:600px) and (max-width:900px) {
+            body{
+                color: blue;
+
+            }
+            
+        }
+        @media  (min-width:600px),(orientation:landscape){
+            body{
+                color: blueviolet;
+            }
+        }
+        #gradients{
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(to top,red,green,blue,yellow,gray 80%);
+        }
+        #gradients2{
+            height: 300px;
+            width: 300px;
+            background-image:radial-gradient(circle,green,red,yellow 80%) ;
+        }
+        #pseudo:hover{
+            color: #00ffff;
+            scale: 1.1;
+        }
+        #pseudo2::first-letter{
+            color: green;
+            font-size: 80px;
+        }
+        .tooltip{
+            position: relative;
+            display: inline-block; 
+            border-bottom: 1px dotted black;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius:6px ;
+            padding: 50px 0px ;
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+<p id="p">this is all in one css3 page </p>
+<hr>
+<div id="color"></div>
+<hr>
+<p id="p1">this is var property1</p>
+<div id="div1">this is var property2</div>
+<hr>
+<div id="media1">hi</div>
+<div id="media2">hello</div><br>
+<hr>
+<div id="gradients"></div>
+<br>
+<hr>
+<div id="gradients2"></div>
+<br><hr>
+<div id="pseudo" style="margin-bottom: 50px; text-align: center;">this is pseudo class 
+    <!-- value=hover,active,disable,first-child,nth-child,focus,hover,visited -->
+</div>
+<br><hr>
+<div id="pseudo2" style="margin-bottom: 50px; text-align: center;">this is pseudo elements
+    <!-- value=after,before,first-letter,first-line,selection -->
+</div><br>
+<hr>
+<div class="tooltip" >hover here to see tooltip
+    <span class="tooltiptext">tooltip text</span>
+</div>
+</body>
+</html>
