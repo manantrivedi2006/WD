@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: bisque;
+        height: 500px;
+        
+    }
+ #ball1{
+    background-color: bisque;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px; 
+    animation-name: b1;
+    animation-duration: 3s;
+    position: relative;
+    top: 300px;
+    left: 0px;
+ }
+ #ball2{
+    background-color: bisque;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px; 
+    animation-name: b2;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    position: absolute;
+    top: 300px;
+    left: 1000px;
+    
+    }
+    #ball3 {
+    background-color: bisque;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px; 
+    animation-name: b3;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    position: absolute;
+    top: 300px;
+    left: 1000px;
+    
+    }
+    #ball4{
+    background-color: bisque;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px; 
+    animation-name: b4;
+    animation-duration: 0.5s;
+    animation-delay: 4.5s;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    
+    }
+    #ball5{
+    background-color: bisque;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px; 
+    animation-name: b5;
+    animation-duration: 0.5s;
+    animation-delay: 4.5s;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    
+    }
+    #ball6{
+    background-color: bisque;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px; 
+    animation-name: b6;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    
+    }
+ @keyframes b1 {
+    from{
+    background-color: red;
+        left: 0px;
+    }
+    to{
+        background-color: bisque;
+        left: 1000px;
+    }
+    
+ }
+ 
+    @keyframes b2 {
+        0%{
+            background-color: red;
+            left: 1000px;
+        }
+        50%{
+            background-color:red;
+            left: 500px;
+            top: 0px;
+        }
+        100%{
+            background-color: bisque;
+            left: 500px;
+            top: 300px;
+        }
+    }
+    
+    @keyframes b3{
+        0%{
+            background-color: red;
+            left: 1000px;
+        }
+        50%{
+            background-color: red;
+            left: 500px;
+            top: 600px;
+        }
+        100%{
+            background-color: bisque;
+            left: 500px;
+            top: 300px;
+        }
+ }
+ 
+    @keyframes b4 {
+        from{
+            background-color: red;
+            left: 500px;
+            
+        }
+        to{
+            background-color: bisque;
+            left: 0px;
+            top: 300px;
+        }
+    }
+    @keyframes b5 {
+        from{
+            background-color: red;
+            left: 500px;
+            top: 600px;
+            
+        }
+        to{
+            background-color: bisque;
+            left: 0px;
+            top: 300px;
+        }
+    }
+    @keyframes b6 {
+        from{
+            background-color: red;
+            left: 0px;
+        }
+        to{
+            background-color: bisque;
+            left: 500px;
+        }
+    }
+
+</style>
+</head>
+<body>
+    
+    <div id="ball1"></div>
+    <div id="ball2"></div>
+    <div id="ball3"></div>
+    <div id="ball4"></div>
+    <div id="ball5"></div>
+    <div id="ball6"></div>
+</body>
+</html>
